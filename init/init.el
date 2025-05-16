@@ -26,7 +26,8 @@
 
 (defun get-default-font ()
   (cond
-   ((eq system-type 'windows-nt) "Courier New Bold-11")
+   ;;((eq system-type 'windows-nt) "Courier New Bold-11")
+   ((eq system-type 'windows-nt) "Cascadia Mono-10")
    ((eq system-type 'gnu/linux) "Monospace-11")))
 (add-to-list 'default-frame-alist `(font . ,(get-default-font)))
 
